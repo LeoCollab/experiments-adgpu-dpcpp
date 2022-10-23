@@ -1,12 +1,12 @@
 # README
 
-This guidelined is based on commit AutoDock DPC++ commit `6e2683f`. Hence, we need to fix and enable flags for profiling.
+These guidelines are based on AutoDock-GPU's (DPC++ version) commit `6e2683f`. Hence, it requires fixes and extra flags for profiling.
 
-Below you can find AutoDock-GPU code modifications as well as compilation and profiling commands for both OpenCL and DPC++ versions.
+Below you can find AutoDock-GPU code modifications as well as compilation & profiling commands for both OpenCL and DPC++ versions.
 
 ## Code Changes
 
-_Important_: **some or all of these code changes might be already merged into the mainline code.**
+Keep in mind that in the meantime, **some or all of these code changes might have been already merged into the mainline code.**
 
 
 ```
