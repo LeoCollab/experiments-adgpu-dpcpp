@@ -31,13 +31,13 @@ choose_codeversion() {
 	read -p "Type either [d] or [o]: " CHOSEN_CODEVERSION
 
 	if [ "${CHOSEN_CODEVERSION}" == "d" ]; then
-        printf "\nChosen code version: DPCPP \n"
-    elif [ "${CHOSEN_CODEVERSION}" == "o" ]; then
-        printf "\nChosen code version: OpenCL \n"
-    else
-        printf "\nWrong selection. Type either [d] or [o] -> terminating!"
-        printf "\n" && echo $0 && exit 1
-    fi
+		printf "\nChosen code version: DPCPP \n"
+	elif [ "${CHOSEN_CODEVERSION}" == "o" ]; then
+		printf "\nChosen code version: OpenCL \n"
+	else
+		printf "\nWrong selection. Type either [d] or [o] -> terminating!"
+		printf "\n" && echo $0 && exit 1
+	fi
 
 	printf "\nSolis-Wets will be run by default. Do you __also__ want to run ADADELTA?"
 	printf "\n"
@@ -58,10 +58,10 @@ define_executable() {
 	if [ "${CHOSEN_CODEVERSION}" == "d" ]; then
 		adgpu_binary=./autodock_xegpu_64wi
 		output_mainfolder=DPCPP
-    elif [ "${CHOSEN_CODEVERSION}" == "o" ]; then
+	elif [ "${CHOSEN_CODEVERSION}" == "o" ]; then
 		adgpu_binary=./autodock_gpu_64wi
 		output_mainfolder=OpenCL
-    fi
+	fi
 	sleep 1
 
 	if [ -f "${adgpu_binary}" ]; then
