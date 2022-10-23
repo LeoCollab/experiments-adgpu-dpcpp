@@ -1,6 +1,6 @@
-# README
+# README for VTune Profiling
 
-These guidelines are based on AutoDock-GPU's (DPC++ version) commit `6e2683f`. Hence, it requires fixes and extra flags for profiling.
+These guidelines are based on AutoDock-GPU's (DPC++ version) commit `6e2683f`. Hence, it requires fixes and extra flags for VTune profiling.
 
 Below you can find AutoDock-GPU code modifications as well as compilation & profiling commands for both OpenCL and DPC++ versions.
 
